@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+  var x = document.forms["form"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out!");
+    return false;
+  }
+}
+
+</script>
+</head>
+<body>
+<form name="form"onsubmit="return validateForm()"
+ action="/http://www.markmurtha.com/csis128/readform.asp"
+ method="post">
+  Name: <input type="text" name="fname">
+  <br>
+  E-Mail Address: <input type="text"name="fmail">
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
+
