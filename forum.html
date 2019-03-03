@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="SmallPet.css">
+<title>Small Pet.net Forum</title>
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <header>Forum</header>
+  <div id="main">
+<ul>
+  <li> <a href="index.html" home">Home</a></li>
+  <li> <a href="forum.html" forun">Forum</a></li>
+  <li> <a href="supplies.html" supplies">Supplies</a></li>
+  <li> <a href="diet.html" diet">Diet</a></li>
+
+ <li class="dropdown">
+<a href="species.html" class="dropdown">Species</a>
+ <div class="dropdown-content">
+      <a href="mammals.html">Mammals</a>
+      <a href="reptiles.html">Reptiles and Amphibians</a>
+      <a href="birds.html">Birds</a>
+      <a href="fish.html">Fish</a>
+    </div>
+
+  <li><a href="Pictures.html">Pictures</a></li>
+  <li> <a href="Videos.html">Videos</a></li>
+  </li>
+</ul>
+
+<article>
+<h2> Sign Up for our Forum! </h2>
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+  var x = document.forms["form"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out!");
+    return false;
+  }
+ x = document.forms["form"]["fmail"].value;
+ if (x == "") {
+    alert("Email must be filled out!");
+    return false;
+  }
+}
+</script>
+</head>
+<body>
+<form name="form"onsubmit="return validateForm()"
+ action="/http://www.markmurtha.com/csis128/readform.asp"
+ method="post">
+  Name: <input type="text" name="fname">
+  <br>
+  E-Mail Address: <input type="text"name="fmail">
+  <br><br>
+  <input type="submit" value="Sign Up Now">
+</form>
+</body>
+</html>
+
+
+</article>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="forum.html">Forum</a>
+  <a href="supplies.html">Supplies</a>
+  <a href="diet.html">Diet</a>
+  <a href="pictures.html">Pictures</a>
+  <a href="videos.html">Videos</a>
+</nav>
+
+<footer>
+Copyright &copy; 2019 <br>
+<a href="mailto:S1451733@student.mcckc.edu">S1451733@student.mcckc.edu</a>
+<br> Christ-ina Lukusa
+</footer>
+</body>
