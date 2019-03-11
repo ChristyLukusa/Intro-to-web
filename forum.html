@@ -42,9 +42,25 @@ function validateForm() {
     alert("Name must be filled out!");
     return false;
   }
+ x = document.forms["form"]["flast"].value;
+ if (x == "") {
+    alert("Last Name must be filled out!");
+    return false;
+  }
+
  x = document.forms["form"]["fmail"].value;
  if (x == "") {
     alert("Email must be filled out!");
+    return false;
+  }
+ x = document.forms["form"]["fuser"].value;
+ if (x == "") {
+    alert("Username must be filled out!");
+    return false;
+  }
+ x = document.forms["form"]["fnumber"].value;
+ if (x == "") {
+    alert("Number must be filled out!");
     return false;
   }
 }
@@ -54,10 +70,17 @@ function validateForm() {
 <form name="form"onsubmit="return validateForm()"
  action="/http://www.markmurtha.com/csis128/readform.asp"
  method="post">
-  Name: <input type="text" name="fname">
+  First Name: <input type="text" name="fname">
   <br>
+ Last Name: <input type="text" name="flast">
+<br>
+ UserName: <input type="text" name="fuser">
+<br>
   E-Mail Address: <input type="text"name="fmail">
-  <br><br>
+  <br>
+  Phone Number <input type="text" name="fnumber">
+<br>
+<br>
   <input type="submit" value="Sign Up Now">
 </form>
 </body>
